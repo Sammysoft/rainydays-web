@@ -12,4 +12,4 @@ font-size: 1rem;
 cursor: pointer;
 width: fit-content;
 margin: 10px 0px 10px 10px;
-`
+`;

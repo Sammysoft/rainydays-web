@@ -85,7 +85,14 @@ const SignInForm = () => {
           </ForgotPassword>
         </FormWrapper>
         <SignInButtonWrapper>
-          <Button>SIGN IN</Button>
+          <Button ><Link
+              to="/dashboard"
+              style={{
+                textDecorationLine: "none",
+                textDecoration: "none",
+                color: `${Colors.WHITE}`,
+              }}
+            >SIGN IN</Link></Button>
           <div>
             <SignUpText>
               New Here? <SignUp>Sign Up</SignUp>
