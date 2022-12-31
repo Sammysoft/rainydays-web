@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React from "react";
 import styled from "styled-components";
 import { Fonts } from "../../Assets/colors";
@@ -8,10 +10,8 @@ const TargetSavings = () => {
     <>
       <Wrapper>
         <CreateSavings>
-            <img src={plus} alt="plus" />
-            <CreateSavingsText>
-                Create new target savings
-            </CreateSavingsText>
+          <img src={plus} alt="plus" />
+          <CreateSavingsText>Create new target savings</CreateSavingsText>
         </CreateSavings>
         <CardsWrapper>
           <CardTop>
@@ -58,24 +58,24 @@ const Wrapper = styled.div`
 `;
 
 const CreateSavings = styled.div`
-background: #FDFEFF;
-border: 1px solid #EBF3FF;
-box-shadow: 0px 4px 8px rgba(235, 243, 255, 0.6);
-border-radius: 8px;
-height: 20vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 30px;
-justify-content: center;
+  background: #fdfeff;
+  border: 1px solid #ebf3ff;
+  box-shadow: 0px 4px 8px rgba(235, 243, 255, 0.6);
+  border-radius: 8px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
 `;
 
 const CreateSavingsText = styled.div`
-color: blue;
-font-family: ${Fonts.Regular};
-font-weight: 600;
-padding: 10px 0px 0px 0px;
-`
+  color: blue;
+  font-family: ${Fonts.Regular};
+  font-weight: 600;
+  padding: 10px 0px 0px 0px;
+`;
 
 const CardsWrapper = styled.div`
   height: 20vh;

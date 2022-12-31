@@ -119,7 +119,7 @@ const DashboardNav = () => {
           >
             <NavItem
               style={
-                location.pathname === "/products"
+                location.pathname === "/products/loan" || location.pathname === "/products"
                   ? {
                       backgroundColor: "white",
                       padding: "5px 10px",
@@ -135,7 +135,7 @@ const DashboardNav = () => {
               <NavItemIcon src={product} alt="icon-product" />
               <NavItemText
                 style={
-                  location.pathname === "/products"
+                  location.pathname === "/products/loan" || location.pathname === "/products"
                     ? { color: "#0000A7" }
                     : { color: "white" }
                 }
