@@ -2,7 +2,7 @@ import styled from "styled-components"
 import { Colors, Fonts } from "../Assets/colors"
 
 export const Button = styled.div`
-padding: 10px 15px;
+padding: 10px 25px;
 font-family: ${Fonts.Regular};
 color: ${Colors.WHITE};
 background-color: ${Colors.PRIMARY};

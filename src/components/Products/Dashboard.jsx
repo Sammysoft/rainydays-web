@@ -31,7 +31,7 @@ const ProductDashboard = () => {
             <NavigatorWrapper>
               <NavigationElement
                 onClick={() => {
-                  navigate("/products/");
+                  navigate("/products");
                   setNavigator("/products");
                 }}
               >

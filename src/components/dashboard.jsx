@@ -8,6 +8,7 @@ import savings from "../Assets/savings_icon.png";
 import atarodo from "../Assets/atarodo.png";
 import boss from "../Assets/boss.png";
 import freesaver from "../Assets/freesaver.png";
+import leaf from "../Assets/leaf.png";
 import Packages from "../Elements/Packages";
 import ReferBar from "./ReferBar";
 import { InputField } from "../Elements/InputText";
@@ -109,6 +110,14 @@ const FreeIcon = () => {
   );
 };
 
+const InvestIcon = () => {
+  return (
+    <>
+      <img src={leaf} alt="free" />
+    </>
+  );
+};
+
 const Dashboard = () => {
   const [showProfile, setShowProfile] = useState(false);
   const [showBank, setShowBank] = useState(false);
@@ -139,6 +148,7 @@ const Dashboard = () => {
           <MoneyCard
             name={"TOTAL INVESTMENTS"}
             background={"#D2E3FF"}
+            icon={<InvestIcon />}
             amount={"N0.00"}
           />
         </CardListingsWrapper>
