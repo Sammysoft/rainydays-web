@@ -43,6 +43,17 @@ const Loan = () => {
               </BottomCard>
             </CardsWrapper>
           </Wrapper>
+          <div
+            style={{
+              fontFamily: `${Fonts.Regular}`,
+              fontWeight: "400",
+              opacity: ".4",
+              padding: "10px 0px 10px 0px",
+              fontSize: "1.5rem",
+            }}
+          >
+            Loan History
+          </div>
           <TableWrap>
             <TableHead>
               <Th>LOAN NAME</Th>
