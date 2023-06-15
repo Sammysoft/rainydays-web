@@ -85,17 +85,33 @@ const SignInForm = () => {
           </ForgotPassword>
         </FormWrapper>
         <SignInButtonWrapper>
-          <Button ><Link
+          <Button>
+            <Link
               to="/dashboard"
               style={{
                 textDecorationLine: "none",
                 textDecoration: "none",
                 color: `${Colors.WHITE}`,
               }}
-            >SIGN IN</Link></Button>
+            >
+              SIGN IN
+            </Link>
+          </Button>
           <div>
             <SignUpText>
-              New Here? <SignUp>Sign Up</SignUp>
+              New Here?{" "}
+              <SignUp>
+                <Link
+                  to="/onboard"
+                  style={{
+                    textDecorationLine: "none",
+                    textDecoration: "none",
+                    color: `${Colors.PRIMARY}`,
+                  }}
+                >
+                  Sign Up
+                </Link>
+              </SignUp>
             </SignUpText>
           </div>
         </SignInButtonWrapper>

@@ -7,6 +7,7 @@ import top from "../Assets/top_outline.png";
 import { Button } from "../Elements/Button";
 import { InputField } from "../Elements/InputText";
 import congrats from "../Assets/congrats.png";
+import { useNavigate } from "react-router-dom";
 
 const PageWrapper = styled.div`
   margin: 10vh 10vw;
@@ -105,13 +106,14 @@ const SuccessText = styled.div`
 `;
 
 const LittleSuccessText = styled.div`
-font-family: ${Fonts.Regular};
-font-size: 1rem;
-`
+  font-family: ${Fonts.Regular};
+  font-size: 1rem;
+`;
 
 const PasswordResetPage = () => {
   const [reset, setReset] = React.useState(false);
   const [verified, setVerified] = React.useState(false);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -125,8 +127,16 @@ const PasswordResetPage = () => {
             <Wrapper>
               <img src={congrats} alt="congratulations" />
               <SuccessText>Password Changed</SuccessText>
-              <LittleSuccessText>Kindly sign in to your account</LittleSuccessText>
-              <Button>SIGN IN</Button>
+              <LittleSuccessText>
+                Kindly sign in to your account
+              </LittleSuccessText>
+              <Button
+                onClick={() => {
+                  navigate("/signin");
+                }}
+              >
+                SIGN IN
+              </Button>
             </Wrapper>
           </>
         ) : (
